@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Beginner's guide to Git with a recap of HTML & CSS, inspired by Thai design"
+    />
+    <title>Git & Web Basics</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 leading-relaxed font-sans">
+    <header class="bg-red-600 text-white p-4 flex items-center">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"
+        alt="Flag of Thailand"
+        class="h-6 w-8 mr-2"
+      />
+      <h1 class="text-xl font-bold">Git & Web Basics (🇹🇭 + 🌏)</h1>
+    </header>
+
+    <main class="p-4">
+      <!-- Introduction -->
+      <section aria-labelledby="intro-heading" class="mb-6">
+        <h2 id="intro-heading" class="text-lg font-semibold mb-2">Welcome!</h2>
+        <p>
+          This is a beginner-friendly guide to start using
+          <strong>Git</strong> and revisit <strong>HTML</strong> &
+          <strong>CSS</strong> skills. Let's keep it simple and clean, with a
+          touch of Thai style.
+        </p>
+      </section>
+
+      <!-- HTML Recap -->
+      <section aria-labelledby="html-heading" class="mb-6">
+        <h2 id="html-heading" class="text-lg font-semibold mb-2">
+          HTML Essentials
+        </h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>
+            <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> for page
+            structure.
+          </li>
+          <li>
+            Use semantic tags (<code>&lt;article&gt;</code>,
+            <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>).
+          </li>
+          <li>Add <code>alt</code> text to images for accessibility.</li>
+          <li>
+            Headings: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> in
+            order.
+          </li>
+          <li>
+            Links: <code>&lt;a href="url"&gt;text&lt;/a&gt;</code> for
+            navigation.
+          </li>
+        </ul>
+      </section>
+
+      <!-- CSS Recap -->
+      <section aria-labelledby="css-heading" class="mb-6">
+        <h2 id="css-heading" class="text-lg font-semibold mb-2">
+          CSS Essentials
+        </h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Responsive design via <code>flex</code> & <code>grid</code>.</li>
+          <li>Use <code>rem</code> or <code>em</code> for font sizes.</li>
+          <li>Maintain sufficient color contrast for readability.</li>
+          <li>Utility-first classes (Tailwind) speed up development.</li>
+          <li>
+            Mobile-first: style small screens first, then add breakpoints.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Git Basics -->
+      <section aria-labelledby="git-heading" class="mb-6">
+        <h2 id="git-heading" class="text-lg font-semibold mb-2">Git Basics</h2>
+        <ol class="list-decimal list-inside space-y-1">
+          <li><code>git init</code> – initialize a repository.</li>
+          <li><code>git status</code> – check changes.</li>
+          <li><code>git add .</code> – stage files.</li>
+          <li><code>git commit -m "message"</code> – commit with message.</li>
+          <li><code>git log</code> – view commit history.</li>
+          <li>
+            <code>git branch</code> & <code>git checkout &lt;branch&gt;</code> –
+            manage branches.
+          </li>
+          <li><code>git merge &lt;branch&gt;</code> – merge changes.</li>
+        </ol>
+      </section>
+
+      <!-- Example Code Box -->
+      <section aria-labelledby="example-heading" class="mb-6">
+        <h2 id="example-heading" class="text-lg font-semibold mb-2">
+          Quick Example
+        </h2>
+        <pre
+          class="bg-gray-100 p-4 rounded overflow-x-auto"
+          aria-label="Example Git commands"
+        >
+<code>
+# Initialize a repo and make first commit
+mkdir lab-git-introduction
+cd thailand-git-tutorial
+git init
+
+# Create an index.html
+touch index.html 
+
+# Stage & commit
+git add .
+git commit -m "new(html): initial structure, content and style"
+</code>
+      </pre>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center text-sm text-gray-600 pt-4 border-t">
+        <p>&copy; 2025 Git Introduction • Accessible • Responsive</p>
+      </footer>
+    </main>
+  </body>
+</html>
